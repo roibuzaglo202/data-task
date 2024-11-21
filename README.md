@@ -62,8 +62,7 @@ Writing tests in utils.test.js to ensure the correctness of your utility functio
    
 2. Requirements
    - utils.js:
-     - Implement the following functions:
-       - fetchData(filePath): Reads and parses data from a JSON file.
+     - Implement the deduplicateByKeys function:
        - deduplicateByKeys(data, keys): Deduplicates an array of objects based on specified keys.
           - Example: Given keys = ['name', 'age'], two objects with the same name and age should be treated as duplicates.
    - index.js:
@@ -76,7 +75,7 @@ Writing tests in utils.test.js to ensure the correctness of your utility functio
      - Write unit tests to ensure the correctness of the utility functions.
        
 #### Deliverables
-1. src/utils.js: Implementation of fetchData and deduplicateByKeys.
+1. src/utils.js: Implementation of deduplicateByKeys.
 2. src/index.js: The main script to process and deduplicate data.
 3. tests/utils.test.js: Unit tests for the functions in utils.js.
 
