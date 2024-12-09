@@ -4,14 +4,7 @@ import fs from 'fs';
  * @param {string} filePath - Path to the JSON file.
  * @returns {Promise<Array>} Parsed JSON data.
  */
-const fetchData = async (filePath) => {
-    try {
-        const fileData = await fs.promises.readFile(filePath, 'utf-8');
-        return JSON.parse(fileData);
-    } catch (error) {
-        console.error(`Error reading file at ${filePath}:`, error);
-        throw error;
-    }
+const readDataFromFile = async (filePath) => {
 };
 
 /**
@@ -23,4 +16,4 @@ const fetchData = async (filePath) => {
 const deduplicateByKeys = (data, keys) => {
 };
 
-export { fetchData, deduplicateByKeys };
+export { readDataFromFile, deduplicateByKeys };

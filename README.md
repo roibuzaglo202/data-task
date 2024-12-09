@@ -4,7 +4,7 @@ This project processes and deduplicates data from multiple JSON files using spec
 
 ## Features
 
-- **Fetch Data**: Read data from JSON files.
+- **Read Data**: Read data from JSON files.
 - **Deduplication**: Remove duplicate entries based on one or more keys.
 - **Sorting**: Sort the deduplicated data alphabetically by a specific field.
 - **Unit Tests**: Comprehensive test coverage for utility functions using Jest.
